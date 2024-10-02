@@ -10,7 +10,7 @@ from langchain.chains import SequentialChain
 from dotenv import load_dotenv
 load_dotenv()
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("Huggingface_tokens")
+os.getenv("Huggingface_tokens")
 
 st.title("First streamlit app")
 display_text=st.text_input("Type a Topic/Person to get the information")
